@@ -1,4 +1,4 @@
-Adam Hochberger's portfolio
+# Adam Hochberger's portfolio
 
 ## This website features progress of different source repositories and past projects
 
