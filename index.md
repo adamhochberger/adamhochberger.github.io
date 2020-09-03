@@ -10,16 +10,21 @@ This website features progress of different source repositories and past project
 
 A Discord.js (Node.js) based bot that retrieves information from this [League of Legends wiki site](https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki) and sends it to the user in the same channel. This is intended for personal usage since I often discuss factors of the game with friends, but is still a publicly visible bot. This can also be used during the additional implementation of the [champion-calc project](https://github.com/adamhochberger/champion-calc) and may pull from that website in the future, rather than the wiki site.
 
-#### The planned commands are as follows
+#### Functionality
 
-- [x] `!champ [name] [ability_choice]`
+##### Implemented
+
+- `!champ [name] [ability_choice]`
   Prints to user components of a champion's abilities (name, damage, cost)
   - `name` is a required field and verifies input with known list of all champions
   - `ability_choice` is one of  `q, w, e, r, or p(assive)` which denotes the ability for a champion - if left blank, it will print out passive and all abilities
-- [x] `!stats [name]`
+- `!stats [name]`
     Prints to user list of a champion's stats (health, mana, defense)
   - `name` is a required field and verifies input with known list of all champions
-- [ ] `!item [name]`
+
+##### To be implemented
+
+- `!item [name]` (*in progress*)
     Prints to user list of a item's stats (health, mana, defense) and passive
 
 ### [champion-calc](https://github.com/adamhochberger/calc)
@@ -28,20 +33,25 @@ A Python-based application that retrieves information from the League of Legends
 
 #### Functionality
 
-- [x] Perform queries on the Data Dragon and Community Dragon APIs
-- [x] Pull champion stat into object and display
-- [x] Calculate champion stat adjustment based on level
-- [ ] Create item class
-  - [ ] Include attributes, passive
-  - [ ] Perform data verification
-- [ ] Convert champion/item object structure into PostgreSQL database designs
-- [ ] Create Django project to perform queries and display data
-- [ ] View champion information from individual URLs
-- [ ] Implement calculator page where characters are manipulated
-  - [ ] Add level scaling toggle
-  - [ ] Add item to character and reflect changes
-  - [ ] Show current damage of ability
-- [ ] Extend base unit class for additional characters (minions, monsters)
+##### Implemented
+
+- Perform queries on the Data Dragon and Community Dragon APIs
+- Pull champion stat into object and display
+- Calculate champion stat adjustment based on level
+
+##### To be implemented
+
+- Create item class
+  - Include attributes, passive
+  - Perform data verification
+- Convert champion/item object structure into PostgreSQL database designs
+- Create Django project to perform queries and display data
+- View champion information from individual URLs
+- Implement calculator page where characters are manipulated
+  - Add level scaling toggle
+  - Add item to character and reflect changes
+  - Show current damage of ability
+- Extend base unit class for additional characters (minions, monsters)
 
 ## Past Projects (WIP)
 
