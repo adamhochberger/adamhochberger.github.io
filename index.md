@@ -1,4 +1,5 @@
-This website features progress of different source repositories and past projects
+## Overview
+This page details progress and descriptions of different projects I have implemented (past and present). I have personal projects based in Python, Django, and Node.js, along with academic assignments and projects in React, MEAN stack, C++, and Java. 
 
 ---
 
