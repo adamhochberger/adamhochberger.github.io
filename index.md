@@ -7,7 +7,7 @@ This page details progress and descriptions of different projects I have impleme
 
 ### [lol-wiki-bot](https://github.com/adamhochberger/lol-wiki-bot) - Node.js
 
-A Discord.js (Node.js) based bot that retrieves information from this [League of Legends wiki site](https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki) and sends it to the user in the same channel. This is intended for personal usage since I often discuss factors of the game with friends, but is still a publicly visible bot. This can also be used during the additional implementation of the [champion-calc project](https://github.com/adamhochberger/champion-calc) and may pull from that website in the future, rather than the wiki site.
+A Discord.js (Node.js) based bot that retrieves information from this [League of Legends wiki site](https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki) and sends it to the user in the same channel. This is intended for personal usage since I often discuss factors of the game with friends, but is still a publicly visible bot. This can also be used during the additional implementation of the [champion-calc project](https://github.com/adamhochberger/champion-calc) and may pull from that website in the future, rather than the wiki site. A roadmap of the progress on this project (Jira) is available [here](https://adamhochberger.atlassian.net/jira/software/projects/LWB/boards/1/roadmap).
 
 #### Implemented
 
@@ -18,11 +18,14 @@ A Discord.js (Node.js) based bot that retrieves information from this [League of
 - `!stats [name]`
   - Prints to user list of a champion's stats (health, mana, defense)
   - `name` is a required field and verifies input with known list of all champions
-
+- `!item [name]`
+  - Prints to user stats and passive of an item, along with gold efficiency and the recipe needed to create it
+  - `name` is a required field and verifies input with known list of all items
+  
 #### To be implemented
 
-- `!item [name]`
-  - Prints to user list of a item's stats (health, mana, defense) and passive
+- `!rune [name]`
+  - Prints to user the information of a given rune (ability, skill tree)
 
 ### [champion-calc](https://github.com/adamhochberger/calc) - Python/Django
 
