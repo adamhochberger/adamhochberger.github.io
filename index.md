@@ -20,12 +20,18 @@ A Discord.js (Node.js) based bot that retrieves information from this [League of
   - `name` is a required field and verifies input with known list of all champions
 - `!item [name]`
   - Prints to user stats and passive of an item, along with gold efficiency and the recipe needed to create it
-  - `name` is a required field and verifies input with known list of all items
+  - `name` is a required field and verifies input with known list of all items  
+- `!tft [(t)rait] [name]`
+  - Prints to user the stats and ability of a trait
+  - `name` is a required field and verifies input with known list of all traits, champs, or items
   
 #### To be implemented
 
 - `!rune [name]`
   - Prints to user the information of a given rune (ability, skill tree)
+- `!tft [(c)hamp, (i)tem] [name] -
+  - Prints to user the stats and ability of a champion, or item from TFT
+  - Functionality will be placed into the above implemented function of the same command
 
 ### [champion-calc](https://github.com/adamhochberger/calc) - Python/Django
 
