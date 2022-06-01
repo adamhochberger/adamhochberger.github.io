@@ -5,6 +5,17 @@ This page details progress and descriptions of different projects I have impleme
 
 ## Current Projects
 
+### [smite-wiki](https://github.com/adamhochberger/smitewiki) - Python/Django/React
+
+A React single-page web application that asynchronously communicates with a Django REST API, which in turn uses a PostgreSQL SQL database to store and access application data according to the data model. The app utilizes information from the Smite Developer API and will serve up information in the form of a one-page app with the ability to easily compare items, gods, or relics (active items) in a more concise and detailed way than is currently available.
+  
+#### To be implemented
+
+- Items app (model, views, URLs)
+- Gods app (model, views, URLs)
+- User app (model, views, URLs)
+- Frontend pages
+
 ### [lol-wiki-bot](https://github.com/adamhochberger/lol-wiki-bot) - Node.js
 
 A Discord.js (Node.js) based bot that retrieves information from this [League of Legends wiki site](https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki) and sends it to the user in the same channel. This is intended for personal usage since I often discuss factors of the game with friends, but is still a publicly visible bot. This can also be used during the additional implementation of the [champion-calc project](https://github.com/adamhochberger/champion-calc) and may pull from that website in the future, rather than the wiki site. A roadmap of the progress on this project (Jira) is available [here](https://adamhochberger.atlassian.net/jira/software/projects/LWB/boards/1/roadmap).
@@ -32,30 +43,6 @@ A Discord.js (Node.js) based bot that retrieves information from this [League of
 - `!tft [(c)hamp, (i)tem] [name] -
   - Prints to user the stats and ability of a champion, or item from TFT
   - Functionality will be placed into the above implemented function of the same command
-
-### [champion-calc](https://github.com/adamhochberger/calc) - Python/Django
-
-A Python-based application that retrieves information from the League of Legends Data Dragon and Community Dragon APIs and uses it to perform calculations on champion objects. Currently, this project uses the `requests` package to query the API and save information into a local champion object class. I am currently using `pytest` to perform checks on the data that has been saved into the objects.  Once the information is able to obtained and saved properly for champions and items, I plan to change this into a web application. This project will use Django in the future to serve as a web application and will utilize PostgreSQL as the backend for storing champion objects that are created. 
-
-#### Implemented
-
-- Perform queries on the Data Dragon and Community Dragon APIs
-- Pull champion stat into object and display
-- Calculate champion stat adjustment based on level
-
-#### To be implemented
-
-- Create item class
-  - Include attributes, passive
-  - Perform data verification
-- Convert champion/item object structure into PostgreSQL database designs
-- Create Django project to perform queries and display data
-- View champion information from individual URLs
-- Implement calculator page where characters are manipulated
-  - Add level scaling toggle
-  - Add item to character and reflect changes
-  - Show current damage of ability
-- Extend base unit class for additional characters (minions, monsters)
 
 ## Past Projects
 
